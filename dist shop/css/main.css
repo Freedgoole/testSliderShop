@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Roboto-Black';
+  src: local('Open Sans'), local('OpenSans'), url('../fonts/Roboto-Black.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: local('Open Sans'), local('OpenSans'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto-Regular';
+}
+.wapper-product {
+  max-width: 960px;
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+}
+.wapper-product_item {
+  width: 225px;
+  margin-top: 20px;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  background-color: #f2f5f8;
+  list-style-type: none;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+.wapper-product_item:hover {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+.wapper-product_item-descr {
+  text-align: center;
+}
+.wapper-product_item-descr_title {
+  margin-top: 18px;
+  color: #2757b0;
+  font-size: 18px;
+}
+.wapper-product_item-descr_price {
+  font-family: 'Roboto-Black';
+  font-size: 18px;
+  margin: 35px 0 15px 0;
+}
